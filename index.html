@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <!-- 自己的特效里的hover -->
+    <link rel="stylesheet" href="./HomePage/HomePageCss/NavigationBar-SpecialEffects.css">
+    <link rel="shortcut icon" href="./HomePage/image/R.jpg.ico">
+    <!-- 主页 -->
+    <link rel="stylesheet" href="./HomePage/HomePageCss/HomePage.css">
+    <!-- 时钟 -->
+    <link rel="stylesheet" href="./clock/clock.css">
+    <!-- 音乐 -->
+    <link rel="stylesheet" href="./HomePage/HomePageCss/music.css">
+    <script src="./HomePage/HomePageJs/jquery.min.js"></script>
+    <script src="./HomePage/HomePageJs/Array.js"></script>
+    <!-- 数组 -->
+    <script src="./HomePage/HomePageJs/picture.js"></script>
+    <style>
+        .AutomaticLockingScreen-source {
+            width: 1920px;
+            position: fixed;
+            z-index: 997;
+
+            ul {
+                z-index: 999;
+            }
+        }
+
+        .active {
+            display: block !important;
+        }
+
+        .p_bb {
+            display: none;
+        }
+
+        .p_bbb {
+            display: block;
+        }
+
+        .background-active {
+            color: red;
+        }
+
+        .ph {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 音乐播放器 -->
+    <div class="video_exist play_yinfu" id="audio_btn" style="z-index:999999;">
+        <div id="yinfu" class="rotate"></div>
+        <audio autoplay="autoplay" id="media" src="./HomePage/mp3/1.mp3" loop="loop">
+        </audio>
+    </div>
+    <!-- 自动锁屏 -->
+    <!-- 时钟 -->
+    <div class="AutomaticLockingScreen">
+        <ul class="clock" id="helang-clock">
+            <hr>
+        </ul>
+        <!-- 背景 -->
+        <video class="AutomaticLockingScreen-source" autoplay="autoplay" loop="loop" id="video" x-webkit-airplay="true"
+            webkit-playsinline="true" muted="">
+            <source src="./clock/453a96daecda927a7cb7b284d7ae5e60_preview.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script src="./clock/clock.js"></script>
+    <script type="text/javascript">
+        $("#helang-clock").clock();
+    </script>
+
+    <!-- 个人中心点开的密码 -->
+    <div class="cipher">
+        <div class="poss">
+            <img src="./HomePage/image/photograph/wallhaven-jxwyem.jpg" alt="">
+            <div class="EnterPassword">
+                <form id="passwordInputForm">
+                    <label for="password">密码:</label>
+                    <input style="opacity: .5;" type="password" id="password" name="password" required>
+                    <button type="submit" style="cursor: pointer; background-color: white;border: 0;">提交</button>
+                </form>
+                <div id="errorMessage" style="color: red; display: none;">密码不正确，再试一次。</div>
+            </div>
+            <b id="X">X</b>
+        </div>
+    </div>
+    <div class="box">
+        <!-- 导航栏 -->
+        <div class="NavigationBar">
+            <div class="NavigationBar-center">
+                <!-- 左边的 -->
+                <ul class="NavigationBar-left">
+                    <li class="SpecialEffects">
+                        <div class="dd">
+                            自己的特效
+                            <span class="L-T">
+                                <span class="L_T">
+                                    <i class="LessThan LessThan2">▲</i>
+                                    <i class="LessThan LessThan1">▼</i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="SpecialEffects-div">
+                            <div class="cloudflare dt">
+                                <a href="./SpecialEffects/cloudflare/index.html">圣诞树</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                </ul>
+                <!-- 右边的 -->
+                <ul class="NavigationBar-right">
+                    <li class="background">
+                        <div class="dd">
+                            图片
+                            <span class="L-T">
+                                <span class="L_T">
+                                    <i class="LessThan LessThan2">▲</i>
+                                    <i class="LessThan LessThan1">▼</i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="background"></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <div class="dd">
+                            视频
+                            <span class="L-T">
+                                <span class="L_T">
+                                    <i class="LessThan LessThan2">▲</i>
+                                    <i class="LessThan LessThan1">▼</i>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <div class="dd">
+                            <span class="IndividualCenter">
+                                个人中心
+                            </span>
+                            <span class="L-T">
+                                <span class="L_T">
+                                    <i class="LessThan LessThan2">▲</i>
+                                    <i class="LessThan LessThan1">▼</i>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航栏里的图片的内部 -->
+        <div class="picture-picture">
+            <div class="picture">
+                <div class="photograph">
+                    <div class="ph_top">
+                        <!-- hutao -->
+                        <div data-target="#ph_1" class="juglans ph_t ph">胡桃</div>
+                        <!-- jiuweihu -->
+                        <div data-target="#ph_2" class="nineTailedFox ph_t">九尾狐</div>
+                        <!-- dongman -->
+                        <div data-target="#ph_3" class="animation ph_t">动漫</div>
+                        <!-- gaoxiao -->
+                        <div data-target="#ph_4" class="funny ph_t">搞笑</div>
+                    </div>
+                </div>
+                <div class="ph_bottom">
+                    <div id="ph_1" class="ph_juglans p_b p_bb p_bbb"></div>
+                    <div id="ph_2" class="ph_nineTailedFox p_b p_bb"></div>
+                    <div id="ph_3" class="ph_animation p_b p_bb"></div>
+                    <div id="ph_4" class="ph_funny p_b p_bb"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="BroadcastMap">
+            <div class="BroadcastMap-b-m">
+                <div class="BroadcastMap-left BroadcastMap-auto">
+                    <div>
+                        <textarea id="textArea" placeholder="Type your text here..."></textarea>
+                    </div>
+                </div>
+                <!-- 中间的轮播图 -->
+                <div class="BroadcastMap-center">
+                    <div class="tupian">
+                        <div class="c_center">
+                            <ul>
+                                <li>
+                                    <img src="HomePage/image/Array/10.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="HomePage/image/Array/2.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="HomePage/image/Array/9.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="HomePage/image/Array/11.jpg" alt="">
+                                </li>
+                            </ul>
+                            <span class="right"> &gt; </span>
+                            <span class="left"> &lt; </span>
+                            <ol></ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="BroadcastMap-right BroadcastMap-auto">
+                    <div>都比</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 音乐 -->
+<script src="./HomePage/HomePageJs/music.js"></script>
+<!-- 自动锁屏 -->
+<script src="./HomePage/HomePageJs/AutomaticLockingScreen.js"></script>
+<!-- 背景 -->
+<script src="./HomePage/HomePageJs/background.js"></script>
+<!-- 主页 -->
+<script src="./HomePage/HomePageJs/HomePage.js"></script>
+<!-- <script src="./HomePage/HomePageJs/jquery.min.js"></script> -->
