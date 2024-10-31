@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./HomePage/image/R.jpg.ico">
+    <link rel="stylesheet" href="./IndividualCenterCss/index.css">
+    <script src="../HomePage/HomePageJs/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,html {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .clearfix::after {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="body" id="background-container">
+    <div class="box">
+        <!-- 头像 -->
+        <div class="avatar">
+            <div class="avatar-aa">
+                <div id="main-image"><img  class="i_1" src="avatar/preview.jpg" alt="" /></div>
+                <div class="avatar-a"></div>
+            </div>
+            <!-- 头像内部的选图 -->
+            <div class="avatar_a">
+                <!-- 三角形 -->
+                <div class="up-triangle"></div>
+                <div class="up-triangle-b ph_bottom">
+                    <!-- 图片排序 -->
+                    <ul class="gallery" id="image-list"></ul>
+                    <!-- 移动时展示的 -->
+                    <div id="magnifier">
+                        <img src="" alt="Magnified Image" />
+                        <div id="tooltip"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="IndividualCenterJS/index.js"></script>
+<!-- 照片数组 -->
+<script src="./IndividualCenterJS/picture.js"></script>
