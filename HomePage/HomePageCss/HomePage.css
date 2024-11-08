@@ -97,7 +97,7 @@ a:hover {
     background-color: #e3e4e5;
     width: 100%;
     position: fixed;
-    z-index:1;
+    z-index: 1;
 
     /* transform-style: preserve-3d; */
     .NavigationBar-center {
@@ -189,7 +189,6 @@ a:hover {
         .tupian {
             height: 400px;
             width: 660px;
-            z-index: 3;
             position: relative;
         }
 
@@ -246,7 +245,6 @@ a:hover {
         .c_center ol {
             position: absolute;
             left: 50%;
-            z-index: 999;
             transform: translateX(-50%);
             bottom: 5px;
         }
