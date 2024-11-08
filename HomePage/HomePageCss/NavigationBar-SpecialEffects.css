@@ -1,34 +1,48 @@
 /* 自己的特效里的hover */
 /* 自己写的特效 */
-.SpecialEffects{
+.SpecialEffects {
     position: relative;
 }
-.SpecialEffects:hover .SpecialEffects-div{
+
+.SpecialEffects:hover .SpecialEffects-div {
     display: block;
-    z-index: 999;
 }
-.SpecialEffects-div{
+
+.SpecialEffects-div {
     border: 1px solid #ccc;
     background-color: #fff;
-    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
-    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
     height: 200px;
     width: 200px;
     display: none;
-    position: absolute;
+
+    .dt {
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+            color: #666;
+        }
+    }
 }
-.dt:hover{
+
+.dt:hover {
     color: red;
 }
-.NavigationBar-left li:hover .LessThan2{
+
+.NavigationBar-left li:hover .LessThan2 {
     display: none;
 }
-.NavigationBar-left li:hover .LessThan1{
+
+.NavigationBar-left li:hover .LessThan1 {
     display: block;
 }
+
 /* 箭头符号 */
-.L_T{
-    .LessThan:hover{
+.L_T {
+    .LessThan:hover {
         color: #999;
     }
 }
