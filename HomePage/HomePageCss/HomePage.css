@@ -97,6 +97,7 @@ a:hover {
     background-color: #e3e4e5;
     width: 100%;
     position: fixed;
+    z-index:1;
 
     /* transform-style: preserve-3d; */
     .NavigationBar-center {
