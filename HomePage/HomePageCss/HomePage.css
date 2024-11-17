@@ -283,6 +283,7 @@ a:hover {
     .picture {
         position: absolute;
         left: 199px;
+        top: 30px;
         width: 1260px;
         z-index: 10;
         background-color: white;
