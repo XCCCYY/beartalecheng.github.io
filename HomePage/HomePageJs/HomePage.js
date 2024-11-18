@@ -66,6 +66,7 @@ $('.NavigationBar').ready(function () {
             // 检查密码是否正确
             if (enteredPassword === correctPassword) {
                 // 密码正确，重定向到目标网页
+                $('.cipher').css('display', 'none');
                 window.location.href = "IndividualCenter/index.html";
             } else {
                 // 密码错误，显示错误信息
@@ -165,6 +166,5 @@ $('.NavigationBar').ready(function () {
                 circlechange();
             }
         });
-        // });
     });
 });
