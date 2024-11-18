@@ -30,6 +30,7 @@
         width: 120px;
         height: 120px;
         margin: 0 auto;
+        cursor: pointer;
     }
 
     .avatar-a {
@@ -71,6 +72,7 @@
                 list-style: none;
                 padding: 0;
                 flex-wrap: wrap;
+                cursor: pointer;
             }
 
             .gallery img {
@@ -110,20 +112,20 @@
         }
 
         /* 导航栏 */
-                .ph_bottom::-webkit-scrollbar {
-                    width: 3px;
-                }
-
-                .ph_bottom::-webkit-scrollbar-track {
-                    background: #0b0b0b3f;
-                }
-
-                .ph_bottom::-webkit-scrollbar-thumb {
-                    background: red;
-                }
-
-                .ph_bottom::-webkit-scrollbar-thumb:hover {
-                    background: #eb0909;
-                }
-            }
+        .ph_bottom::-webkit-scrollbar {
+            width: 3px;
         }
+
+        .ph_bottom::-webkit-scrollbar-track {
+            background: #0b0b0b3f;
+        }
+
+        .ph_bottom::-webkit-scrollbar-thumb {
+            background: red;
+        }
+
+        .ph_bottom::-webkit-scrollbar-thumb:hover {
+            background: #eb0909;
+        }
+    }
+}
