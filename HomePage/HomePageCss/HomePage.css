@@ -99,13 +99,13 @@ a:hover {
     position: fixed;
     z-index: 1;
 
-    /* transform-style: preserve-3d; */
     .NavigationBar-center {
         width: 1260px;
         margin: 0 auto;
         height: 30px;
         line-height: 30px;
-        color: #999;
+        color: #333;
+        position: relative;
     }
 
     .NavigationBar-left {
@@ -116,6 +116,15 @@ a:hover {
     .NavigationBar-left li {
         float: left;
         margin-left: 15px;
+    }
+
+    .NavigationBar_center {
+        width: 60px;
+        position: absolute;
+        left: 600px;
+        a{
+            color: #333;
+        }
     }
 
     .NavigationBar-right {
@@ -131,7 +140,7 @@ a:hover {
 }
 
 .NavigationBar li a {
-    color: #999;
+    color: #333;
 }
 
 .NavigationBar a:hover,
@@ -159,15 +168,18 @@ a:hover {
         margin: 0 auto;
     }
 
-    .BroadcastMap-auto::-webkit-scrollbar{
+    .BroadcastMap-auto::-webkit-scrollbar {
         width: 5px;
     }
-    .BroadcastMap-auto::-webkit-scrollbar-track{
+
+    .BroadcastMap-auto::-webkit-scrollbar-track {
         background-color: #777;
     }
-    .BroadcastMap-auto::-webkit-scrollbar-thumb{
+
+    .BroadcastMap-auto::-webkit-scrollbar-thumb {
         background-color: #333;
     }
+
     /* 轮播图左边的 */
     .BroadcastMap-left {
         background-color: white;
@@ -273,7 +285,6 @@ a:hover {
         overflow: auto;
     }
 }
-
 
 /* 导航栏的图片 */
 .picture-picture {
