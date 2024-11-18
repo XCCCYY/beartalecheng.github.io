@@ -1,0 +1,45 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background: url('../AnotherPageImpge/20200722113343_4893c.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-cursor {
+    position: absolute;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    z-index: 10000;
+  }
+  @keyframes hover-glow {
+    0% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+    50% {
+      transform: scale(1.2);
+      filter: brightness(150%);
+    }
+    100% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+  }
+  .hover-effect {
+    animation: hover-glow 1s ease-in-out infinite;
+  };
+/* canvas */
+#combinedCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
